@@ -1,0 +1,13 @@
+appName:  redisservice
+appImage: redis
+appVersion: alpine
+appReplicas:  2
+containerPort:  6379
+
+servicePort:  6379
+volumeMounts:
+  - name: redis-data
+    mountPath:  /data
+volumes:
+  - name: redis-data
+    emptyDir: {}
