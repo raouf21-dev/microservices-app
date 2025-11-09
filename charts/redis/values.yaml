@@ -6,4 +6,4 @@ containerPort:  6379
 volumeName: redis-data
 containerMountPath: /data
 
-servicePort:  3679
+servicePort:  6379
